@@ -1,12 +1,3 @@
-// tem 9 squares
-// cada vez é um jogador (jogador 1 e jogador 2)
-// cada jogador escolhe o que ele quer ser (x ou o)
-// cada um vai escolher uma posição
-// e vai marcar onde escolheu a posição
-
-// para vencer, se houverem 3 simbolos seguidos do mesmo, acaba o jogo
-// tanto na horizontal, vertical ou diagonal
-
 let board = ['', '', '', '', '', '', '', '', ''];
 let player = 0;
 const teams = ['O', 'X'];
