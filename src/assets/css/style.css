@@ -1,0 +1,118 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ border: none;
+}
+
+/* Viewport */
+.container {
+ background: #ab04d7;
+ background: linear-gradient(90deg, #ab04d7 28%, #13d4a5 100%);
+ height: 100vh;
+ display: grid;
+ justify-items: center;
+ align-content: center;
+ grid-gap: 2em;
+}
+
+/* Viewport title */
+.container > h1 {
+ font: 400 2rem/1 'Righteous', sans-serif;
+ color: #fff;
+ letter-spacing: 0.2rem;
+}
+
+/* Container de todos os squares */
+.container > .squares-container {
+ display: grid;
+ grid-template: repeat(3, 150px) / repeat(3, 150px);
+ grid-gap: 0.1rem;
+}
+
+/* Desenhando os squares */
+.square:nth-child(1),
+.square:nth-child(2),
+.square:nth-child(3),
+.square:nth-child(4),
+.square:nth-child(5),
+.square:nth-child(6) {
+ border-bottom: 3px solid #fff;
+}
+
+.square:nth-child(1),
+.square:nth-child(2),
+.square:nth-child(4),
+.square:nth-child(5),
+.square:nth-child(7),
+.square:nth-child(8) {
+ border-right: 3px solid #fff;
+}
+
+.square:nth-child(2),
+.square:nth-child(3),
+.square:nth-child(5),
+.square:nth-child(6),
+.square:nth-child(8),
+.square:nth-child(9) {
+ border-left: 3px solid #fff;
+}
+
+.square:nth-child(4),
+.square:nth-child(5),
+.square:nth-child(6),
+.square:nth-child(7),
+.square:nth-child(8),
+.square:nth-child(9) {
+ border-top: 3px solid #fff;
+}
+
+/* Estrutura dos squares */
+.container > .squares-container > .square {
+ width: 150px;
+ height: 150px;
+ cursor: pointer;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.O::after {
+ content: '\2B55';
+ font-size: 6em;
+ line-height: 150px;
+}
+
+.X::after {
+ content: '\274C';
+ font-size: 6em;
+ line-height: 150px;
+}
+
+.game-over {
+ position: absolute;
+ inset: 0;
+ width: 100%;
+ height: 100vh;
+ background-color: rgba(0, 0, 0, 0.7);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 3rem;
+ visibility: hidden;
+}
+
+button {
+ padding: 0.7rem 2rem;
+ text-transform: uppercase;
+ background-color: #13d4a5;
+ font: 700 1.1rem/1 'Montserrat', sans-serif;
+ cursor: pointer;
+ color: #eee;
+}
+
+p {
+ font: 900 5rem/1 'Montserrat', sans-serif;
+ color: #fff;
+}
