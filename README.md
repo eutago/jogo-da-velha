@@ -1,9 +1,5 @@
 # <b>Jogo da velha</b>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/eutago/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/eutago/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/eutago/README-template?style=for-the-badge)
-
 <img src="./examples/jogo.png" alt="Imagem do jogo">
 
 > Um simples jogo da velha feito com no Curso Programador BR, porém com algumas melhorias.
